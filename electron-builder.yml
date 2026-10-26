@@ -1,0 +1,50 @@
+appId: com.mise.restaurant
+productName: Mise
+copyright: Copyright © 2026 Mise
+
+directories:
+  output: release
+
+# Keep files on disk (no asar) so PGlite can load its wasm assets and Express
+# can serve the built client straight from the install folder.
+asar: false
+npmRebuild: false
+
+files:
+  - package.json
+  - desktop/**/*
+  # server/package.json carries "type": "module"; without it dist/*.js is
+  # parsed as CommonJS and the app fails to start.
+  - server/package.json
+  - server/dist/**/*
+  - client/dist/**/*
+  - db/migrations/**/*
+
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+    - target: nsis
+      arch:
+        - x64
+  # No code signing certificate here, and unpacking the signing tools needs
+  # Windows symlink privileges. Skipping it keeps `npm run package:win`
+  # working on a normal (non-admin) account.
+  signAndEditExecutable: false
+
+portable:
+  artifactName: Mise-${version}.exe
+
+# One-time install: launches instantly. The portable build above unpacks its
+# whole folder on every start, which is slow (~80s on a scanned disk).
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Mise
+  artifactName: Mise-Setup-${version}.exe
+  # Data lives in %APPDATA%/Mise/data, so uninstalling keeps the database.
+  deleteAppDataOnUninstall: false

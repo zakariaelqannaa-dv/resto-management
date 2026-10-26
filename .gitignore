@@ -1,0 +1,16 @@
+node_modules/
+dist/
+release/
+.env
+.env.local
+server/.data/
+*.log
+.DS_Store
+
+# Local AI tooling state
+.agents/
+skills-lock.json
+
+# Electron / OS noise
+Thumbs.db
+desktop.ini
