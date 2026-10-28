@@ -28,7 +28,11 @@
 
 [![Made by zakariaelqannaa-dv](https://img.shields.io/badge/made%20by-zakariaelqannaa--dv-2563eb?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zakariaelqannaa-dv)
 
+<<<<<<< Updated upstream
 
+=======
+> A fast, offline-first restaurant back-of-house system built for Windows. Manage your menu, floor, orders, and kitchen workflow from one simple app.
+>>>>>>> Stashed changes
 
 Restaurant back-of-house app: menu, floor tables, orders and an **editable kitchen ticket board**
 
@@ -40,7 +44,21 @@ React + Express + PostgreSQL. Runs out of the box on an embedded Postgres (PGlit
 
 install needed** — and switches to a real Postgres by setting `DATABASE_URL`.
 
+<<<<<<< Updated upstream
 
+=======
+## ✨ Features
+
+- **🍽️ Menu Management** - Organize dishes by categories with prices, stations (kitchen/grill/bar), and availability
+- **🪑 Table Management** - Visual floor plan with zones, seat counts, and table status tracking
+- **🧾 Order Management** - Create orders, add items, fire to kitchen, settle payments
+- **👨‍🍳 Editable Kitchen Board** - Drag-and-drop style workflow (Queued → Preparing → Ready → Served) with per-station views
+- **🎫 Smart Ticket System** - Auto-generated day-scoped codes (`K-YYMMDD-NNN`) with full editability
+- **📊 Dashboard** - Real-time stats on orders, covers, tickets, and revenue
+- **💾 Fully Offline** - Runs entirely on your machine with embedded PGlite database
+- **🖥️ Native Windows App** - Clean desktop experience, no browser required
+- **🔒 Single Instance** - Prevents accidental double-launches and database conflicts
+>>>>>>> Stashed changes
 
 ---
 
@@ -48,9 +66,13 @@ install needed** — and switches to a real Postgres by setting `DATABASE_URL`.
 
 ## 📥 Download for Windows
 
+<<<<<<< Updated upstream
 
 
 No Node.js, no PostgreSQL, no internet connection required. Pick one:
+=======
+**No Node.js, no PostgreSQL, no internet connection required.** Pick one:
+>>>>>>> Stashed changes
 
 
 
@@ -119,9 +141,13 @@ staff. To start over, close Mise, delete `%APPDATA%\Mise\data`, and open it agai
 
 ---
 
+<<<<<<< Updated upstream
 
 
 ## Quick start (from source)
+=======
+## 🛠️ Quick start (from source)
+>>>>>>> Stashed changes
 
 
 
@@ -167,9 +193,13 @@ Until then, `:4000` shows a short landing page pointing at the Vite dev server i
 
 `Cannot GET /`.
 
+<<<<<<< Updated upstream
 
 
 ## Build the Windows app yourself
+=======
+## 🏗️ Build the Windows app yourself
+>>>>>>> Stashed changes
 
 
 
@@ -205,9 +235,13 @@ built web app in a window. The database is embedded Postgres (PGlite) stored on 
 
 is fully offline.
 
+<<<<<<< Updated upstream
 
 
 ## Positions
+=======
+## 📋 Positions
+>>>>>>> Stashed changes
 
 
 
@@ -415,9 +449,13 @@ client/src
 
 ```
 
+<<<<<<< Updated upstream
 
 
 ## Not built yet
+=======
+## 🚧 Not built yet
+>>>>>>> Stashed changes
 
 
 
@@ -427,12 +465,26 @@ Stock deduction when items are fired
 Printer / KDS device integration
 
 
-## License
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/zakariaelqannaa-dv/resto-management/issues).
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
 
 
 
 [MIT](LICENSE) © 2026 [Zakaria Elqannaa (zakariaelqannaa-dv)](https://github.com/zakariaelqannaa-dv)
 
+<<<<<<< Updated upstream
 
 
 If this project is useful to you, a ⭐ on the repo is appreciated.
+=======
+If this project is useful to you, a ⭐ on the repo is greatly appreciated!
+>>>>>>> Stashed changes
